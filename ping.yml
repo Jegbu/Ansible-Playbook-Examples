@@ -4,4 +4,4 @@
   tasks:
      - name: test connection
        ansible.builtin.ping: 
-# Use for for ignoring nsible SSH Host Key Checking Video 60!
+# See if your hosts can take your commands       
