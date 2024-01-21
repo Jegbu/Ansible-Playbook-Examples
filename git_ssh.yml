@@ -18,3 +18,7 @@
         repo: "{{ repo }}"
         dest: "{{ dest }}"
         key_file: "{{ sshkey }}"
+        
+# Please create an EC2 instance for free with the key pair installed in order to see the change on your instance either wise you will get an error
+# like this: fatal: [localhost]: FAILED! => {"changed": false, "msg": ["Could not detect which major revision of yum is in use, which is required to determine module backend.", 
+# "You should manually specify use_backend to tell the module whether to use the yum (yum3) or dnf (yum4) backend})"]}
