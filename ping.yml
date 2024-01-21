@@ -1,0 +1,7 @@
+---
+- name: ping module demo
+  hosts: all
+  tasks:
+     - name: test connection
+       ansible.builtin.ping: 
+# Use for for ignoring nsible SSH Host Key Checking Video 60!

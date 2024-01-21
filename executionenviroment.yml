@@ -1,0 +1,16 @@
+---
+version: 1
+dependecies: 
+   galaxy: requirements.yml
+   python: requirements.txt
+   system: bindep.txt
+
+additional_build_steps:
+   prepend: |
+      RUN pip3 intall --upgrade pip setuptools
+   append:
+      - RUN ls -al /      
+  
+
+ # Ask abt Building a Custom Ansible Execution Environment - ansible-builder command-line tool on homebrew! Along with  Run an Ansible Execution Environment - ansible-runner command-line tool Vid 58 and 59
+ 
