@@ -2,7 +2,7 @@
 - name: git module demo
   hosts: all
   vars:
-    repo: "git@github.com:lucab85/ansible-pilot.git"
+    repo: "git@github.com:JEgg96/Ansible-Playbook-Examples.git"
     dest: "/home/devops/ansible-pilot"
     sshkey: "~/.ssh/id_rsa"
   tasks:
