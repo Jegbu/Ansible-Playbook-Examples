@@ -10,3 +10,4 @@
       ansible.builtin.fetch:
         src: "{{ log_file }}"
         dest: "{{ dump_dir }}"
+# If it doesn't work try using the sudo command
