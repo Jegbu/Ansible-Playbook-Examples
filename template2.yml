@@ -18,4 +18,5 @@
         src: templates/placeholder.html.j2
         dest: /var/www/html/index.html
 
-# Utilize placeholder.html.j2 for html page        
+# Utilize placeholder.html.j2 for html page 
+# Need an istance for the full playbook to work
