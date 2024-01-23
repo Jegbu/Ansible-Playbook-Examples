@@ -17,3 +17,5 @@
       ansible.builtin.template:
         src: templates/placeholder.html.j2
         dest: /var/www/html/index.html
+
+# Utilize placeholder.html.j2 for html page        
