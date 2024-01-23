@@ -6,7 +6,7 @@
     page_title: "Placeholder"
     page_description: |
       This is my placeholder page example.
-      Multiline is possible ;-)
+      Multiline is possible
   tasks:
     - name: install Nginx
       ansible.builtin.apt:
