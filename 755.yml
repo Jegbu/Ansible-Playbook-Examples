@@ -1,0 +1,13 @@
+---
+- name: file 755
+  hosts: all
+  vars: 
+    myscript: "~/jeexample.sh"
+  tasks: 
+    - name: set execution permission
+      ansible.builtin.file:
+        dest: "{{ myscript }}"
+        mode: 'a+x'
+
+# What does this mean? fatal: 
+# [localhost]: FAILED! => {"changed": false, "msg": "file (/Users/manjekhan/jeexample.sh) is absent, cannot continue", "path": "/Users/manjekhan/jeexample.sh", "state": "absent"}          
