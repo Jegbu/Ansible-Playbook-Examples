@@ -1,0 +1,11 @@
+---
+- name: delete file 
+  hosts: all
+  vars:
+    mypath: "/users/manjekhan/downloads/ansible-project/deleteme"
+  become: "false"
+  tasks:
+    - name: delete "{{ mypath }}" not present 
+      ansible.builtin.file:
+        path: "{{ mypath }}"
+        state: absent
