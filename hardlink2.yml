@@ -1,0 +1,12 @@
+--- 
+- name: hardlink
+  hosts: all
+  vars:
+    mylink: ~/link"
+    myfile: "~/example.txt"
+  tasks:
+    - name: create a hard link 
+      ansible.builtin.file:
+        src: "{{ mysrc }}"
+        dest: "{{ mylink }}"
+        state: hard
