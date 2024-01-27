@@ -1,0 +1,12 @@
+--- 
+- name: softlink module 
+  hosts: all
+  vars:
+    mylink: ~/example"
+    mysrc: "/proc/cpuinfo"
+  tasks: 
+    - name: Create a symlink
+      ansible.builtin.file:
+        src: "{{ mysrc }}"
+        dest: "{{ mydest }}"
+        state: link  
