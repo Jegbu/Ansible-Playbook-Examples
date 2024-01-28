@@ -1,0 +1,19 @@
+---
+- name: delete specific file(s) in directory
+  hosts: all
+  vars:
+    mypath: "/Users/manjekhan/Downloads/example"
+  tasks: 
+    - name: collect files
+      ansible.builtin.find:
+        paths: "{{ mypath }}"
+        hidden: "true"
+        recurse: "true"
+        file_type: any
+      register: collected_files
+
+    - name: Remove collected_files
+      ansible.builtin.file:
+        path: "{{ item.path }}"
+        state: absent
+      with_items: "{{ collected_files }}"
