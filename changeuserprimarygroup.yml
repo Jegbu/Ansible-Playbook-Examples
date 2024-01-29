@@ -1,0 +1,12 @@
+--- 
+- name: user module
+  hosts: all
+  become: "true"
+  vars:
+    myuser: "User present"
+    mygroup: "ansible-project/"
+  tasks: 
+    - name: change primary group
+      ansible.builtin.user:
+        name: "{{ myuser }}"
+        group: "{{ mygroup }}"  
