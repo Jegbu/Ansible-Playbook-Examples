@@ -1,1 +1,1 @@
-These are a collecton of ansible playbooks that I have created over time.
+These are a collecton of ansible playbooks that I have created.
